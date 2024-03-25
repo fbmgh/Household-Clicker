@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon2.ico">
+  <title>Household Clicker</title>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/life.js"></script>
+  <script type="module" src="./js/timer_levels.js"></script>
+  <script type="module" src="./js/enemy.js"></script>
+  <script type="module" src="./js/bonuses.js"></script>
+  <script type="module" src="./js/audio.js"></script>
+</head>
+
+<body>
+
+  <div id="gameArea">
+    <div class="info-panel">
+      <div id="lifeContainer">
+        <div class="life">
+          <img src="images/heart.png">
+        </div>
+        <div class="life">
+          <img src="images/heart.png">
+        </div>
+        <div class="life">
+          <img src="images/heart.png">
+        </div>
+        <div class="life">
+          <img src="images/heart.png">
+        </div>
+        <div class="life">
+          <img src="images/heart.png">
+        </div>
+      </div>
+      <button id="playMusic">MUSIC ON</button>
+      <div id="timerContainer">
+        <img src="images/timer.png">
+        <span id="timeLeft">: 15 s</span>
+      </div>
+    </div>
+    <div class="current-level">
+      <p id="level">Level: 1</p>
+    </div>
+    <div id="cursorDot">
+      <img class="target" src="images/target.png">
+    </div>
+
+    <audio id="backgroundMusic" loop>
+      <source src="./audios/background.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+</body>
+</html>
